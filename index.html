@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning JS</title>
+        <style>
+            *{
+                margin: 0;
+                padding:0;
+            }
+            header{
+                text-align: center;
+                background-color:#ccc;
+                height:60px;
+                width: 100%;
+                display: table;
+            }
+            header h1{
+                display: table-cell;
+                vertical-align: middle;
+            }
+            main{
+                width:80%;
+                margin:auto;
+            }
+            .form-section{
+                margin-top: 60px;
+                padding: 30px;
+                border:2px solid black;            
+            }
+            input[type="text"]{
+                display: block;
+                width: 100%;
+            }
+            input[type="email"]{
+                display: block;
+                width: 100%;
+            }
+            button{
+                margin-top: 20px;
+                width: 100%;
+                padding: 5px;
+            }
+            .form-group{
+                padding: 10px;
+            }
+            .items{
+                list-style: none;
+            }
+            .item{
+                margin-top: 10px;
+                background-color: lavender;
+                line-height: 1.6em;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+             <h1>Learning DOM with JS</h1>
+        </header>
+        
+        <main>
+            <section class="form-section">
+                <form>
+                    <h1>My Form</h1>
+
+                    <div class="msg"></div>
+
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email">
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <ul class="users"></ul>
+
+            <!--
+                 <ul class="items">
+                <li class="item">Item 1</li>
+                <li class="item">Item 2</li>
+                <li class="item">Item 3</li>
+            </ul>
+            -->
+           
+
+        </main>
+
+       
+      
+        <script src="main.js"></script>
+    </body>
+</html>
